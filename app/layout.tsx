@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { geistMono, geistSans, instrumentSerif } from "./fonts";
 import "./globals.css";
+import { ReactLenis } from "@/utils/lenis";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +18,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <ReactLenis root>
+        <body className="min-h-full flex flex-col">{children}</body>
+      </ReactLenis>
     </html>
   );
 }

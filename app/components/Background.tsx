@@ -72,7 +72,7 @@ export default function Background() {
   }, [images.length]);
 
   return (
-    <div className="pointer-events-none fixed left-0 top-0 z-0 h-[50vh] w-screen overflow-hidden bg-black">
+    <div className="pointer-events-none absolute left-0 right-0 top-0 z-0 h-[50vh] w-screen overflow-hidden bg-black">
       {images.map((image, index) => (
         <div
           key={image.src}
