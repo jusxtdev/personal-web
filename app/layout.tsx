@@ -7,6 +7,9 @@ import Footer from "./components/Footer";
 export const metadata: Metadata = {
   title: "Dev Prajapati",
   description: "Backend systems, distributed architecture, and occasional photography.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
