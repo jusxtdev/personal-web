@@ -5,8 +5,37 @@ import { ReactLenis } from "@/utils/lenis";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "Dev Prajapati",
+  title: {
+    default: "Dev Prajapati",
+    template: "%s | Dev Prajapati",
+  },
   description: "Backend systems, distributed architecture, and occasional photography.",
+  openGraph: {
+    title: "Dev Prajapati",
+    description: "Backend systems, distributed architecture, and occasional photography.",
+    type: "website",
+    url: "https://devprajapati-eta.vercel.app/",
+    siteName: "Dev Prajapati",
+    images: [
+      {
+        url: "https://i.postimg.cc/8zV0F87F/661-1x-shots-so.png",
+        width: 1200,
+        height: 630,
+        alt: "Dev Prajapati",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dev Prajapati",
+    description: "Backend systems, distributed architecture, and occasional photography.",
+    site: "@jusxtdev",
+    creator: "@jusxtdev",
+    images: {
+      url: "https://i.postimg.cc/8zV0F87F/661-1x-shots-so.png",
+      alt: "Dev Prajapati",
+    },
+  },
   icons: {
     icon: "/favicon.svg",
   },
