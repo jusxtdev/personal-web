@@ -12,7 +12,7 @@ export default function IntroText() {
         <p className="mt-3 pl-1 text-sm font-normal text-zinc-400/80 sm:text-base">
           @jusxtdev
         </p>
-        <div className="mt-4 max-w-2xl text-base leading-7 text-white/75 sm:pl-14 sm:text-lg">
+        <div className="mt-4 max-w-2xl text-base leading-7 text-white/75 pl-10 sm:pl-14 sm:text-lg">
           <p
             className={`${forum.className} text-pretty  leading-8 text-[#f4ead0]/80 drop-shadow-[0_3px_10px_rgba(0,0,0,0.7)]`}
           >
