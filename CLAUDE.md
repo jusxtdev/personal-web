@@ -92,9 +92,33 @@ app/
 │   ├── Hero.tsx       # Intro section
 │   ├── Explore.tsx    # Navigation cards
 │   └── Footer.tsx     # Connect links
+├── work/page.tsx      # Work/Portfolio page
+├── scenery/page.tsx   # Wallpapers page
 └── utils/
     └── lenis.tsx      # Smooth scroll wrapper
+data/
+├── explore.ts         # Explore section data
+├── work.ts           # Skills & projects data
+├── footer.ts         # Footer links data
+└── scenery.ts        # Wallpapers data
 ```
+
+## Pages
+
+### Non-Home Pages
+All pages except the home page should include a "Back to Home" navigation link:
+```tsx
+<a
+  href="/"
+  className="group inline-flex items-center gap-2 text-sm text-[#9aa394] transition-colors hover:text-[#c9a85f]"
+>
+  <span className="transition-transform group-hover:-translate-x-1">←</span>
+  <span>Go to Home</span>
+</a>
+```
+- Place above the heading with `mt-8` margin
+- Use secondary text color `#9aa394`
+- Arrow moves left on hover
 
 ## Next.js Conventions
 

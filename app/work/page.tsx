@@ -11,8 +11,17 @@ export default function Work() {
   return (
     <main className="relative z-10 mx-auto flex min-h-screen w-full max-w-5xl flex-col items-center px-6 py-16 text-white">
       <div className="w-full max-w-3xl">
+        {/* Back to Home */}
+        <a
+          href="/"
+          className="group inline-flex items-center gap-2 text-sm text-[#9aa394] transition-colors hover:text-[#c9a85f]"
+        >
+          <span className="transition-transform group-hover:-translate-x-1">←</span>
+          <span>Go to Home</span>
+        </a>
+
         {/* Skills Section */}
-        <section>
+        <section className="mt-8">
           <h2 className={`${instrumentSerif.className} text-4xl font-normal text-[#fff7df] sm:text-6xl`}>
             Skills
           </h2>
