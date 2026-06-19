@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "Dev Prajapati",
     images: [
       {
-        url: "https://i.postimg.cc/8zV0F87F/661-1x-shots-so.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Dev Prajapati",
@@ -31,10 +31,7 @@ export const metadata: Metadata = {
     description: "Backend systems, distributed architecture, and occasional photography.",
     site: "@jusxtdev",
     creator: "@jusxtdev",
-    images: {
-      url: "https://i.postimg.cc/8zV0F87F/661-1x-shots-so.png",
-      alt: "Dev Prajapati",
-    },
+    images: ["/og-image.png"],
   },
   icons: {
     icon: "/favicon.svg",
