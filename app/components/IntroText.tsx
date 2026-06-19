@@ -1,4 +1,4 @@
-import { forum, instrumentSerif,  } from "../fonts";
+import { forum, instrumentSerif } from "../fonts";
 
 export default function IntroText() {
   return (
@@ -13,11 +13,25 @@ export default function IntroText() {
           @jusxtdev
         </p>
         <div className="mt-4 max-w-2xl text-base leading-7 text-white/75 sm:pl-14 sm:text-lg">
-          <p className={`${forum.className} text-pretty  leading-8 text-[#f4ead0]/80 drop-shadow-[0_3px_10px_rgba(0,0,0,0.7)]`}>
+          <p
+            className={`${forum.className} text-pretty  leading-8 text-[#f4ead0]/80 drop-shadow-[0_3px_10px_rgba(0,0,0,0.7)]`}
+          >
             I spend most of my time thinking about backend systems — distributed
             architecture, networking, the stuff that has to work quietly in the
-            background. When I&apos;m not doing that, I&apos;m watching anime, following
-            F1, or taking photos of clouds for no particular reason.
+            background. When I&apos;m not doing that, I&apos;m watching anime,
+            following F1, or taking photos of clouds for no particular reason.
+            <br />
+            <a
+              href="/work"
+              className="group mt-6 inline-flex items-center gap-2 text-[15px] text-[#ece5d3] transition-colors duration-200 hover:text-[#fff7df]"
+            >
+              <span className="border-b border-[#6b7a64] pb-0.5 transition-colors duration-200 group-hover:border-[#c9a85f]">
+                See my work
+              </span>
+              <span className="transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-0.5">
+                ↗
+              </span>
+            </a>
           </p>
         </div>
       </div>

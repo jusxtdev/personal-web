@@ -18,14 +18,14 @@ const LINKS = [
   },
 ];
 
-export default function TestSection() {
+export default function Connect() {
   return (
-    <section className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center px-6 py-16 text-left text-white">
+    <section className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center px-6 py-16 text-left text-white h-screen">
       <div className="w-full max-w-3xl">
         <h2
           className={`${instrumentSerif.className} text-3xl font-normal text-[#fff7df] sm:text-4xl`}
         >
-          Links
+          Connect
         </h2>
         <div className="mt-6 max-w-2xl space-y-6 sm:pl-14">
           {LINKS.map((link) => (
@@ -46,9 +46,12 @@ export default function TestSection() {
                 {link.description}
               </span>
             </a>
+            
           ))}
         </div>
       </div>
     </section>
   );
 }
+
+
