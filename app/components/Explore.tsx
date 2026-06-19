@@ -1,57 +1,20 @@
 "use client";
 
 import { forum, instrumentSerif } from "../fonts";
-
-type ExploreItem = {
-  title: string;
-  tagline: string;
-  href: string;
-};
-
-const items: ExploreItem[] = [
-  {
-    title: "Interests",
-    tagline: "Things that keep me curious",
-    href: "/interests",
-  },
-  {
-    title: "Favorites",
-    tagline: "Stories that stayed with me",
-    href: "/favorites",
-  },
-  {
-    title: "Photography",
-    tagline: "Things I wanted to remember",
-    href: "/photography",
-  },
-  {
-    title: "Scenery",
-    tagline: "A collection of wallpapers and landscapes",
-    href: "/scenery",
-  },
-  
-];
+import { exploreItems } from "@/data/explore";
 
 export default function Explore() {
   return (
     <section className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center px-6 py-16 text-left text-white">
       <div className="w-full max-w-3xl">
-        <p
-          className={`${instrumentSerif.className} text-4xl font-normal text-[#fff7df] sm:text-6xl`}
-        >
+        <h2 className={`${instrumentSerif.className} text-4xl font-normal text-[#fff7df] sm:text-6xl`}>
           Explore
-        </p>
-{/*  */}
-        <div className="relative mt-4 max-w-2xl space-y-6 pl-10 sm:pl-14">
-          <div
-            className="absolute left-15 top-5.5 bottom-5.5 w-px"
-            style={{
-              background:
-                "linear-gradient(to bottom, rgba(124,138,120,0.5), rgba(124,138,120,0.15))",
-            }}
-          />
+        </h2>
 
-          {items.map((item) => (
+        <div className="relative mt-4 max-w-2xl space-y-6 pl-10 sm:pl-14">
+          <div className="absolute left-15 top-5.5 bottom-5.5 w-px bg-linear-to-b from-[#6b7a64]/50 to-[#6b7a64]/15" />
+
+          {exploreItems.map((item) => (
             <a
               key={item.title}
               href={item.href}
@@ -63,7 +26,7 @@ export default function Explore() {
                 <div className={`${forum.className} text-[28px] font-medium text-[#ece5d3] transition-colors group-hover:text-[#fbf7ec]`}>
                   {item.title}
                 </div>
-                <div className="mt-1 text-[13.5px] italic text-[#6b756a] transition-colors group-hover:text-[#8a9388]" style={{ fontFamily: "var(--font-inter)" }}>
+                <div className="mt-1 font-inter text-[13.5px] italic text-[#6b756a] transition-colors group-hover:text-[#8a9388]">
                   {item.tagline}
                 </div>
               </div>

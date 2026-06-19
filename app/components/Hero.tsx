@@ -1,6 +1,6 @@
 import { forum, instrumentSerif } from "../fonts";
 
-export default function IntroText() {
+export default function Hero() {
   return (
     <section className="relative z-10 mx-auto flex min-h-screen w-full max-w-5xl flex-col items-center px-6 pt-[42vh] text-left text-white">
       <div className="w-full max-w-3xl">
@@ -14,7 +14,7 @@ export default function IntroText() {
         </p>
         <div className="mt-4 max-w-2xl text-base leading-7 text-white/75 pl-10 sm:pl-14 sm:text-lg">
           <p
-            className={`${forum.className} text-pretty  leading-8 text-[#f4ead0]/80 drop-shadow-[0_3px_10px_rgba(0,0,0,0.7)]`}
+            className={`${forum.className} text-pretty leading-8 text-[#f4ead0]/80 drop-shadow-[0_3px_10px_rgba(0,0,0,0.7)]`}
           >
             I spend most of my time thinking about backend systems — distributed
             architecture, networking, the stuff that has to work quietly in the

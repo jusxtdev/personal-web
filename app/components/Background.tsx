@@ -2,20 +2,28 @@
 
 import Image, { type StaticImageData } from "next/image";
 import { useEffect, useState } from "react";
-import image1 from "@/public/1.jpg";
-import image2 from "@/public/2.jpg";
-import image3 from "@/public/3.jpg";
-import image4 from "@/public/4.jpg";
-import image5 from "@/public/5.jpg";
-import image6 from "@/public/6.jpg";
-import image7 from "@/public/7.jpg";
-import image8 from "@/public/8.jpg";
-import image9 from "@/public/9.jpg";
-import image10 from "@/public/10.jpg";
+import image1 from "@/public/background/1.jpg";
+import image2 from "@/public/background/2.jpg";
+import image3 from "@/public/background/3.jpg";
+import image4 from "@/public/background/4.jpg";
+import image5 from "@/public/background/5.jpg";
+import image6 from "@/public/background/6.jpg";
+import image7 from "@/public/background/7.jpg";
+import image8 from "@/public/background/8.jpg";
+import image9 from "@/public/background/9.jpg";
+import image10 from "@/public/background/10.jpg";
 
 const IMAGES: StaticImageData[] = [
-  image1, image2, image3, image4, image5,
-  image6, image7, image8, image9, image10,
+  image9,
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+  image8,
+  image10,
 ];
 
 export default function Background() {

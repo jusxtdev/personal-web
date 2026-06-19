@@ -1,16 +1,6 @@
 import { Fragment } from "react";
 import { instrumentSerif } from "../fonts";
-
-type Link = { label: string; href: string; external?: true };
-
-const links: Link[] = [
-  { label: "Portfolio", href: "/work" },
-  { label: "GitHub", href: "https://github.com/jusxtdev", external: true },
-  { label: "LinkedIn", href: "https://linkedin.com/in/jusxtdev", external: true },
-  { label: "Email", href: "mailto:jusxtdev@gmail.com" },
-  { label: "X", href: "https://x.com/DevPrajapati25", external: true },
-  { label: "Resume", href: "/resume.pdf", external: true },
-];
+import { footerLinks } from "@/data/footer";
 
 export default function Footer() {
   return (
@@ -20,7 +10,7 @@ export default function Footer() {
       </h2>
 
       <nav className="mt-7 flex flex-wrap pl-10 sm:pl-14">
-        {links.map((link, i) => (
+        {footerLinks.map((link, i) => (
           <Fragment key={link.label}>
             <a
               href={link.href}
@@ -29,7 +19,7 @@ export default function Footer() {
             >
               {link.label}
             </a>
-            {i < links.length - 1 && (
+            {i < footerLinks.length - 1 && (
               <span className="mx-4 text-[#3f4a3b]">/</span>
             )}
           </Fragment>
