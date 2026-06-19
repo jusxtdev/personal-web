@@ -1,36 +1,4 @@
-// import { instrumentSerif } from "../fonts";
-
-// export default function Explore() {
-//   return (
-//     <section className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center px-6 py-16 text-left text-white">
-//       <div className="w-full max-w-3xl">
-//         <h2
-//           className={`${instrumentSerif.className} text-3xl font-normal text-[#fff7df] sm:text-4xl`}
-//         >
-//           Explore
-//         </h2>
-//         <div></div>
-//       </div>
-//     </section>
-//   );
-// }
-
 "use client";
-
-// import { Cormorant_Garamond, Inter } from 'next/font/google';
-
-// const cormorant = Cormorant_Garamond({
-//   subsets: ['latin'],
-//   weight: ['500'],
-//   style: ['normal', 'italic'],
-//   variable: '--font-cormorant',
-// });
-
-// const inter = Inter({
-//   subsets: ['latin'],
-//   weight: ['400', '500'],
-//   variable: '--font-inter',
-// });
 
 import { forum, instrumentSerif } from "../fonts";
 
