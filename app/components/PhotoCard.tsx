@@ -12,42 +12,33 @@ function formatPhotoDate(date: string): string {
   return d.toLocaleDateString("en-US", {
     month: "short",
     day: "numeric",
-    year: "numeric",
   });
 }
 
-export default function PhotoCard({ src, alt, title, date, caption, href = "#", onClick }: PhotoCardProps) {
+export default function PhotoCard({ src, alt, title, date, onClick }: PhotoCardProps) {
   return (
-    <a
-      href={href}
+    <button
       onClick={onClick}
-      className="group relative mb-6 block break-inside-avoid overflow-hidden rounded-lg border border-transparent bg-[#1a1a1a] transition-colors duration-200 hover:border-[#6b7a64]/40"
+      className="group relative mb-6 block w-full break-inside-avoid cursor-pointer overflow-hidden rounded-lg border border-transparent bg-[#1a1a1a] transition-colors duration-200 hover:border-[#6b7a64]/40"
     >
-      <div className="relative aspect-4/3 overflow-hidden">
-        <Image
-          src={src}
-          alt={alt || title}
-          fill
-          sizes="(max-width: 640px) 100vw, 50vw"
-          quality={85}
-          className="object-cover"
-        />
+      <Image
+        src={src}
+        alt={alt || title}
+        width={800}
+        height={600}
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        quality={85}
+        className="w-full h-auto"
+      />
+      {/* Bottom text */}
+      <div className="flex items-baseline justify-between px-3 py-2">
+        <span className={`${forum.className} text-sm text-[#ece5d3]`}>
+          {title}
+        </span>
+        <span className="text-xs text-[#9aa394]">
+          {formatPhotoDate(date)}
+        </span>
       </div>
-      <div className="flex items-start justify-between gap-4 py-3 px-4">
-        <div>
-          <h3 className={`${forum.className} text-[22px] font-medium text-[#ece5d3] transition-colors group-hover:text-[#fff7df]`}>
-            {title}
-          </h3>
-          <p className="mt-1 text-sm text-[#6b756a]">
-            {formatPhotoDate(date)}
-          </p>
-        </div>
-        {caption && (
-          <p className="text-right text-sm italic text-[#9aa394]">
-            {caption}
-          </p>
-        )}
-      </div>
-    </a>
+    </button>
   );
 }

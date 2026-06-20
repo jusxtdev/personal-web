@@ -32,7 +32,7 @@ export default function Photography() {
 
   return (
     <>
-      <main className="relative z-10 mx-auto min-h-screen w-full max-w-5xl px-6 py-16 text-white">
+      <main className="relative z-10 mx-auto min-h-screen w-full max-w-7xl px-6 py-16 text-white">
         {/* Back to Home */}
         <a
           href="/"
@@ -52,7 +52,7 @@ export default function Photography() {
         </p>
 
         {/* Photo Grid - Masonry layout */}
-        <div className="mt-8 [column-count:1] sm:[column-count:2] gap-6 [column-fill:balance]">
+        <div className="mt-8 [column-count:1] sm:[column-count:2] lg:[column-count:3] gap-6 [column-fill:balance]">
           {photos.map((photo) => (
             <PhotoCard
               key={photo.src}

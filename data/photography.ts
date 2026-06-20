@@ -8,7 +8,8 @@ export type Photo = {
 };
 
 export const photos: Photo[] = [
-  { src: "/photos/1.jpg", alt: "Mountain sunrise", title: "Mountain Sunrise", date: "2024-01-15", caption: "Golden hour at the peaksat the peaksat the peaksat the peaksat the peaks" },
-  { src: "/photos/2.jpg", alt: "Forest path", title: "Forest Path", date: "2024-02-20", caption: "Morning walk in the woods" },
-  { src: "/photos/3.jpg", alt: "City lights", title: "City Lights", date: "2024-03-10", caption: "Urban nightscape" },
+  { src: "/photos/morningWalk.png", alt: "Morning Walk", title: "Morning Walk", date: "2024-03-10" },
+  { src: "/photos/ganesh.png", alt: "Ganesh", title: "Ganesh Chaturthi", date: "2025-08-27" },
+  { src: "/photos/kitty.png", alt: "Kitty", title: "Kitty cat", date: "2024-11-18" },
+  { src: "/photos/eveningCrane.png", alt: "Evening Crane", title: "Evening Crane", date: "2025-01-16" },
 ];
