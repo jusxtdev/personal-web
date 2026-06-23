@@ -54,7 +54,7 @@ export default function Work() {
         {/* Work Section */}
         <section className="mt-12">
           <h2 className={`${instrumentSerif.className} text-4xl font-normal text-[#fff7df] sm:text-6xl`}>
-            Work
+            Projects
           </h2>
 
           <div className="mt-6 max-w-2xl space-y-8 pl-10 sm:pl-14">
